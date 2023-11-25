@@ -8,7 +8,7 @@
     body{
       margin:0;
       padding:0;
-      font-family:Arial,sans-serif;
+      font-family:'Roboto',sans-serif;
     }
     header{
       background:#3a4547;
@@ -16,16 +16,16 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
+
     }
     nav ul{
       list-style-type:none;
       margin:0;
       padding:0;
       display:flex;
-  
     }
     .logo{
-     max-width:100%;
+      max-width:100%;
      height:auto;
      cursor:pointer;
     }
@@ -43,22 +43,7 @@
     nav a:hover{
       color:#4287f5;
     }
-    .lab-students{
-      margin-top:15px;
-      margin-left:
-    }
-    .home-content{
-      margin:auto;
-      padding:20px;
-      max-width:900px;
-    }
-    .lab-students{
-      float:left;
-      margin-right:20px;
-      border-radius:5px;
-    }
   </style>
-      
 </head>
 <body>
   <header>
@@ -74,31 +59,7 @@
       </ul>
     </nav>
   </header>
-  
-  <div id="header-container">
-
-  </div>
-  <!--content -->
-  <div class="home-content">
-    <img src="students at lab-cs.jpg" alt="Students" class="lab-students">
-    <p>Welcome to the Computer Science Department!</p>
-    <p>Explore the limitless world with technology with us! At the heart of innovation and discovery,
-      our Computer Science Department is a dynamic hub where curiosity meets code.Whether you're seasoned 
-      coder or just embarking on your digital journey,our diverse community of faculty,researchers,and students
-      is here to inspire and support you.
-    </p>
-    <p>Immerse yourself in our comprehensive programs designed to equip you with the latest
-      skills and knowledge in computer science.From algorithms to artificial intelligence,we pave
-      the way for your success in a rapidly evolving tech landscape.
-    </p>
-    <p>Ready to embark on a journey of innovation and discovery?Explore our programs,meet our passionate
-      faculty,and become part of the vibrant community that defines the future of computer science.
-    </p>
-    <span>Welcome to the Computer Science Department-where ideas become reality and the possibilities
-      are limitless!
-    </span>
-  </div>
-  
+  <img src="courses.jpg" alt="students">
   <script src="injectHeader.js">
     function injectHeader() {
       var xhr = new XMLHttpRequest();
@@ -114,12 +75,7 @@
       xhr.send();
     }
     document.addEventListener('DOMContentLoaded', injectHeader);
-
-    
     
   </script>
-  <footer>
-    
-  </footer>
 </body>
 </html>

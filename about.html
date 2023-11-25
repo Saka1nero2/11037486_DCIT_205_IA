@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS Website</title>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      font-family:'Roboto',sans-serif;
+    }
+    header{
+      background:#3a4547;
+      color:#e9f0eb;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+    nav ul{
+      list-style-type:none;
+      margin:0;
+      padding:0;
+      display:flex;
+  
+    }
+    .logo{
+     max-width:100%;
+     height:auto;
+     cursor:pointer;
+    }
+    nav li{
+      margin-right:15px;
+    }
+    nav a{
+      text-decoration:none;
+      color:#fff;
+      font-weight:bold;
+      font-size:16px;
+      transition:color 0.3s ease;
+      cursor:pointer;
+    }
+    nav a:hover{
+      color:#4287f5;
+    }
+    .about-content{
+      margin:auto;
+      padding:20px;
+      max-width:1000px;
+    }
+    .about_img{
+      float:left;
+      margin-right:20px;
+    }
+    p{
+      padding-top:10px;
+    }
+    .courses_content{
+      text-align:center;
+      margin-top:5px;
+      
+    }
+    .courses-link{
+      text-decoration:none;
+    }
+
+  </style>
+      
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="comScience_logo.png" alt="CS logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="staff.html">Staff</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div id="header-container">
+
+  </div>
+  <!--content -->
+  <div class="about-content">
+    <img src="about-img2.jpeg" alt="about" class="about_img">
+    <p>This is the Information Technology age and at its core is Computer Science. <p>The study of computer science is therefore critical if society is to take full advantage of the benefits Information Technology has to offer and make rapid economic advances.</p><p> Computer science involves the study and development of applications that allow for our everyday use of computers, the software systems that support these applications, and the means and methods used to produce both applications and systems that behave reliably, correctly and ethically.</p>
+       At the heart of Computer Science lies the skill of computer programming and employers who hire Computer Scientists expect adept programmers with knowledge of current techniques and tools and the ability to apply sound engineering principles to the development, construction and maintenance of computer programs.
+
+      The range of courses available in the department and the skills acquired by students enable them to find employment in many diverse fields of the economy and prepare our graduates for the computing industry, working in a project team (or research and development team), and to enable the graduate to bring specialist skills to that team. The course also provides the platform for further study or research through exposure to established and emerging technologies and methods, and to active fields of research in Computer Science.
+      
+      The Department offers two undergraduate degree programmes, Bachelor of Science in Computer Science Single-Major (3:2:1:1) and Major-Minor (3:2:2:1) as well as Bachelor of Science in Information Technology.</p>
+  </div>
+  <div class="courses_content">
+    <a href="courses.html" class="courses-link">Access to all our programs</a>
+  </div>
+  <script src="injectHeader.js">
+    function injectHeader() {
+      var xhr = new XMLHttpRequest();
+
+      var headerPath = 'header.html';
+      xhr.open('GET' , headerPath,true);
+
+      xhr.onreadystatechange = function(){
+        if (xhr.readyState === 4 && xhr.status === 200){
+          document.getElementById('header-container').innerHTML =xhr.responseText;
+        }
+      };
+      xhr.send();
+    }
+    document.addEventListener('DOMContentLoaded', injectHeader);
+    
+  </script>
+</body>
+</html>
