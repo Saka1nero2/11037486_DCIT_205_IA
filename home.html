@@ -57,6 +57,43 @@
       margin-right:20px;
       border-radius:5px;
     }
+    .footer-container{
+      background-color:#212329;
+      padding-bottom:4rem;
+
+    }
+    .footer{
+      width:80%;
+      height:40vh;
+      background-color:#212329;
+      color:#fff;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin:0 auto;
+    }
+    .footer-heading{
+      display:flex;
+      flex-direction:column;
+      margin-right:4rem;
+
+    }
+    .footer-heading h2{
+      margin-bottom:2rem;
+
+    }
+    .footer-heading a{
+      color:#fff;
+      text-decoration:none;
+      margin-bottom:0.5rem;
+    }
+    .footer-heading a:hover{
+      color:red;
+      transition:0.3s ease-out;
+    }
+    .footer-email-form h2{
+      margin-bottom:2rem;
+    }
   </style>
       
 </head>
@@ -118,7 +155,7 @@
     
     
   </script>
-  <div class="container">
+  <div class="footer-container">
     <div class="footer">
       <div class="footer-heading footer-1">
         <h2>About US</h2>
@@ -147,6 +184,7 @@
       <div class="footer-email-form">
         <h2>Join our newsletter</h2>
         <input type="email" placeholder="Enter your email address" id="footer-email">
+        <input type="submit" id="footer-email-btn" value="Sign Up">
       </div>
     </div>
   </div>
