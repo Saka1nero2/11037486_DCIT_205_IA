@@ -43,6 +43,12 @@
     nav a:hover{
       color:#4287f5;
     }
+    .courses-image{
+      display:flex;
+      align-items:center;
+      height:100vh;
+      margin:0;
+    }
   </style>
 </head>
 <body>
@@ -59,7 +65,7 @@
       </ul>
     </nav>
   </header>
-  <img src="courses.jpg" alt="students">
+  <img src="courses.jpg" alt="students" class="courses-image">
   <script src="injectHeader.js">
     function injectHeader() {
       var xhr = new XMLHttpRequest();
@@ -75,6 +81,7 @@
       xhr.send();
     }
     document.addEventListener('DOMContentLoaded', injectHeader);
+    
     
   </script>
 </body>
