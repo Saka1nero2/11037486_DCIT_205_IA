@@ -59,3 +59,23 @@ ul {
 li {
   margin-bottom: 10px;
 }
+.devfest{
+  width:500px;
+  margin-left:20px;
+  border-radius:4px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  -ms-border-radius:4px;
+  -o-border-radius:4px;
+}
+section{
+  align-items:center;
+}
+.cs-program{
+  display:flex;
+  height:500px;
+  margin-left:20px;
+}
+.images{
+  display:flex;
+}
