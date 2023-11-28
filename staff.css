@@ -1,6 +1,9 @@
 body {
   font-family: 'Arial', sans-serif;
   margin: 20px;
+  text-align:center
+  display:flex;
+  background-image:url("https://github.com/Saka1nero2/11037486_DCIT_205_IA/blob/main/uniog.jpg")
 }
 
 h1 {
@@ -15,7 +18,7 @@ h1 {
 }
 
 .lecturer img {
-  max-width: 100%;
+  max-width: 50%;
   border-radius: 50%;
   margin-bottom: 15px;
 }
