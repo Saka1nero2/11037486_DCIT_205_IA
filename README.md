@@ -31,3 +31,15 @@ Steps:
 a.use git add . (adds all the files to git)
 b.git commit -m "commit message" (to commit all changes)
 c.git push (to push all those changes you have committed to the main)
+
+Screenshots of the website .
+![page1]("127.0.0.1_5502_home.html.png")
+![page2]("127.0.0.1_5502_about.html.png")
+![page3]("127.0.0.1_5502_staff.html.png")
+![page4]("127.0.0.1_5502_events.html.png")
+
+### What I learned from this project
+
+1.Working on time.
+2.Ways to use variuous resources on the internet.
+3.Learnt how git and github works.
